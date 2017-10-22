@@ -1,0 +1,17 @@
+.container{
+   width: 500px;
+   height: 500px;
+   line-height: 500px;
+   text-align:center;
+   border:1px solid red;
+}
+
+ .left{
+   width:140px;
+   float:left;
+   height:100%;
+ }
+
+ .right{
+   margin-left:140px;
+ }
