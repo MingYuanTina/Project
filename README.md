@@ -1,8 +1,7 @@
 # Project
 
-# A list of small projects worked during 3B school term
-
-# CS341:
+	A list of small projects worked during 3B term
+	CS341:
 	# A program contained a collection of algorithm design patterns
 	# User interface implemented that allows for user inputs 
 	# Initial Menu: 
