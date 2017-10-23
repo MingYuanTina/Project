@@ -5,8 +5,7 @@
 class CoinChange : public Model {
 private:
 	std::vector<int>list;
-	int target;
-	int len;
+	int len, target;
 
 public:	
 	void set_info();

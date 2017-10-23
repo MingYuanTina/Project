@@ -9,11 +9,17 @@ using namespace std;
 // Include list of algorithm
 #include "Recursion/Sum.h"
 #include "DivideAndConquer/Inversion.h"
-#include "GreedyAlgorithm/CoinChange.h"
+
+// Greedy Algorithm
 #include "GreedyAlgorithm/IntervalScheduling.h"
 #include "GreedyAlgorithm/MinimizeLateness.h"
+
+// Dynamic Programming
 #include "DynamicProgramming/Fabonacci.h"
 #include "DynamicProgramming/MaxCommonSequence.h"
+#include "DynamicProgramming/LongestIncreasingSequence.h"
+#include "DynamicProgramming/CoinChange.h"
+#include "DynamicProgramming/Knapsack.h"
 
 class Controller {
 private:
@@ -52,10 +58,8 @@ public:
 			}
 		} else if (user_option == 2){
 			if (sub_menu_option == 0){
-				this->m = new CoinChange();
-			} else if (sub_menu_option == 1){
 				this->m = new IntervalScheduling();
-			} else if (sub_menu_option == 2){
+			} else if (sub_menu_option == 1){
 				this->m = new MinimizeLateness();
 			}
 		} else if (user_option == 3){
@@ -63,6 +67,12 @@ public:
 				this->m = new Fabonacci();
 			} else if (sub_menu_option == 1){
 				this->m = new MaxCommonSequence();
+			} else if (sub_menu_option == 2){
+				this->m = new LongestIncreasingSequence();
+			} else if (sub_menu_option == 3){
+				this->m = new CoinChange();
+			} else if (sub_menu_option == 4){
+				this->m = new Knapsack();
 			}
 		}
 		this->m->set_info();

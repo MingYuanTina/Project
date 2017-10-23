@@ -19,8 +19,8 @@ void Menu::set_sub_menu(){
 	// Initialize all sub_menu
 	const string sum_menu[] = {"Two Sum", "Three Sum", "Four Sum"};
 	const string dnc_menu[] = {"Inversion (Naive)", "Inversion (Improved)"};
-	const string ga_menu[] = {"Coin Change", "Interval Scheduling", "Minimize Lateness"};
-	const string dp_menu[] = {"Fibonacci", "Max Common Sequence"};
+	const string ga_menu[] = {"Interval Scheduling", "Minimize Lateness"};
+	const string dp_menu[] = {"Fibonacci", "Max Common Sequence", "Longest Increaseing Sequence", "Coin Change", "Knapsack"};
 	vector<string>sum(sum_menu, sum_menu + sizeof(sum_menu)/sizeof(string));
 	vector<string>divide_and_conquer(dnc_menu, dnc_menu + sizeof(dnc_menu)/sizeof(string));
 	vector<string>greedy_algorithm(ga_menu, ga_menu + sizeof(ga_menu)/sizeof(string));
