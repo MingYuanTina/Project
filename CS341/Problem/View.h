@@ -1,6 +1,6 @@
 #ifndef VIEW_H
 #define VIEW_H
-#include "Menu.h"
+#include "Menu/Menu.h"
 
 class View {
 private:
@@ -8,6 +8,7 @@ private:
 	std::vector<std::string>general_menu;	
 	std::vector<std::string>sub_menu;
 public:
+	View();
 	void print_menu();
 	void print_sub_menu(int user_option);
 	void print_output(std::string algo, std::string time, std::string space, int iteration, std::vector<int>output);

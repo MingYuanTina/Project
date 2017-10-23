@@ -5,6 +5,11 @@
 #include "View.h"
 using namespace std;
 
+View::View(){
+	this->m.set_option_type();
+	this->m.set_sub_menu();
+}
+
 void View::print_instruction(string instr){
 	cout << instr << endl;
 }
@@ -14,7 +19,6 @@ void View::print_user_prompt(){
 }
 
 void View::print_menu(){
-	this->m.set_option_type();
 	this->general_menu = this->m.get_option_type();
 	for (int i = 0; i < this->general_menu.size(); i++){
 		cout << "[" << i << "]" << " " << this->general_menu[i] << endl;

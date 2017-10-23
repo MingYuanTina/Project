@@ -1,10 +1,9 @@
-#ifndef INVERSION_H
-#define INVERSION_H
-#include "Model.h"
+#ifndef FABONACCI_H
+#define FABONACCI_H
+#include "../Model.h"
 
-class Inversion : public Model {
+class Fabonacci : public Model {
 private:
-	std::vector<int>list;
 	int len;
 
 public:	
@@ -15,4 +14,3 @@ public:
 };
 
 #endif
-

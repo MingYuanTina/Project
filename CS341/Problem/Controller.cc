@@ -7,8 +7,13 @@
 using namespace std;
 
 // Include list of algorithm
-#include "Sum.h"
-#include "Inversion.h"
+#include "Recursion/Sum.h"
+#include "DivideAndConquer/Inversion.h"
+#include "GreedyAlgorithm/CoinChange.h"
+#include "GreedyAlgorithm/IntervalScheduling.h"
+#include "GreedyAlgorithm/MinimizeLateness.h"
+#include "DynamicProgramming/Fabonacci.h"
+#include "DynamicProgramming/MaxCommonSequence.h"
 
 class Controller {
 private:
@@ -45,8 +50,21 @@ public:
 			} else if (sub_menu_option == 1){
 				// New Inversion
 			}
+		} else if (user_option == 2){
+			if (sub_menu_option == 0){
+				this->m = new CoinChange();
+			} else if (sub_menu_option == 1){
+				this->m = new IntervalScheduling();
+			} else if (sub_menu_option == 2){
+				this->m = new MinimizeLateness();
+			}
+		} else if (user_option == 3){
+			if (sub_menu_option == 0){
+				this->m = new Fabonacci();
+			} else if (sub_menu_option == 1){
+				this->m = new MaxCommonSequence();
+			}
 		}
-
 		this->m->set_info();
 		this->v.print_instruction(this->m->get_general_info());
 		this->m->get_info();

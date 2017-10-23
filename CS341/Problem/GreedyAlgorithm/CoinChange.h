@@ -1,12 +1,12 @@
-#ifndef SUM_H
-#define SUM_H
-#include "Model.h"
+#ifndef COIN_CHANGE_H
+#define COIN_CHANGE_H
+#include "../Model.h"
 
-class Sum : public Model {
+class CoinChange : public Model {
 private:
 	std::vector<int>list;
-	int len;
 	int target;
+	int len;
 
 public:	
 	void set_info();
@@ -16,4 +16,3 @@ public:
 };
 
 #endif
-
