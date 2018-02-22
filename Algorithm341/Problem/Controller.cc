@@ -48,21 +48,21 @@ public:
 	}
 
 	void perform_output(){
-		if (this->user_option == 0){
+		if (this->user_option == 0){		// Recursion
 			this->m = new Sum();
-		} else if (user_option == 1){
+		} else if (user_option == 1){ 	// Divide and Conquer
 			if (sub_menu_option == 0){
 				this->m = new Inversion();
 			} else if (sub_menu_option == 1){
 				// New Inversion
 			}
-		} else if (user_option == 2){
+		} else if (user_option == 2){		// Greedy Algorithm
 			if (sub_menu_option == 0){
 				this->m = new IntervalScheduling();
 			} else if (sub_menu_option == 1){
 				this->m = new MinimizeLateness();
 			}
-		} else if (user_option == 3){
+		} else if (user_option == 3){	 	// Dynamic Programming
 			if (sub_menu_option == 0){
 				this->m = new Fabonacci();
 			} else if (sub_menu_option == 1){
@@ -74,7 +74,8 @@ public:
 			} else if (sub_menu_option == 4){
 				this->m = new Knapsack();
 			}
-		}
+		} 
+		
 		this->m->set_info();
 		this->v.print_instruction(this->m->get_general_info());
 		this->m->get_info();

@@ -7,7 +7,7 @@ using namespace std;
 
 
 void Menu::set_option_type(){
-	const string menu[] = {"Sum", "DivideAndConquer", "Greedy Algorithm", "DynamicProgramming", "q"};
+	const string menu[] = {"Sum", "DivideAndConquer", "Greedy Algorithm", "DynamicProgramming", "Graph Algorithm", "q"};
 	for (int i = 0; i < sizeof(menu)/sizeof(string); i++){
 		this->general_menu.push_back(menu[i]);
 	}
@@ -21,16 +21,19 @@ void Menu::set_sub_menu(){
 	const string dnc_menu[] = {"Inversion (Naive)", "Inversion (Improved)"};
 	const string ga_menu[] = {"Interval Scheduling", "Minimize Lateness"};
 	const string dp_menu[] = {"Fibonacci", "Max Common Sequence", "Longest Increaseing Sequence", "Coin Change", "Knapsack"};
+	const string gra_menu[] = {"Breath First Search", "Depth First Search"};
 	vector<string>sum(sum_menu, sum_menu + sizeof(sum_menu)/sizeof(string));
 	vector<string>divide_and_conquer(dnc_menu, dnc_menu + sizeof(dnc_menu)/sizeof(string));
 	vector<string>greedy_algorithm(ga_menu, ga_menu + sizeof(ga_menu)/sizeof(string));
 	vector<string>dynamic_programming(dp_menu, dp_menu + sizeof(dp_menu)/sizeof(string));
+	vector<string>graph_algorithm(gra_menu, gra_menu + sizeof(gra_menu)/sizeof(string));
 
 	// Assign all sub_menu
 	sub_menu.push_back(sum);
 	sub_menu.push_back(divide_and_conquer);
 	sub_menu.push_back(greedy_algorithm);
 	sub_menu.push_back(dynamic_programming);
+	sub_menu.push_back(graph_algorithm);
 
 	this->sub_menu_option = sub_menu;
 }
